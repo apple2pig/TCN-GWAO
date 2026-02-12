@@ -47,11 +47,33 @@ TCN-GWAO/
 ├── requirements.txt          # Python dependencies
 ├── .gitignore               # Git ignore rules
 ├── tcn-gawo.ipynb           # Jupyter notebook with complete implementation
+├── paper/                   # Research paper and diagrams
+│   ├── architecture.png     # TCN model architecture diagram
+│   ├── The process diagram of TCN-GAWO.png  # Overall workflow diagram
+│   └── md_146_10_101703.pdf # Published paper
 └── dataset/                 # Data files (auto-ignored, download separately)
     ├── train_FD001.txt      # Training dataset
     ├── test_FD001.txt       # Test dataset
     └── RUL_FD001.txt        # True RUL values
 ```
+
+## TCN-GWAO Architecture Overview
+
+### TCN Model Architecture
+
+<div align="center">
+<img src="paper/architecture.png" alt="TCN Architecture" width="90%"/>
+</div>
+
+The Temporal Convolutional Network architecture features dilated causal convolutions with increasing dilation rates (1, 2, 4, 8), enabling the model to capture long-range temporal dependencies while maintaining computational efficiency.
+
+### Complete Process Workflow
+
+<div align="center">
+<img src="paper/The process diagram of TCN-GAWO.png" alt="TCN-GWAO Process Diagram" width="90%"/>
+</div>
+
+The complete TCN-GWAO workflow illustrates the integration of data preprocessing, TCN-based feature extraction, genetic algorithm optimization, and final RUL prediction with weighted averaging across multiple test windows.
 
 ## Installation
 

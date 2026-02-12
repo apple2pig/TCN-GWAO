@@ -41,12 +41,9 @@ env/
 *~
 
 # Data files
-dataset/
 *.h5
 *.hdf5
 
-# Data files (but not requirements.txt)
-!requirements.txt
 
 # Model checkpoints
 models/
